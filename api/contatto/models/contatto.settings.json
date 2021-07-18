@@ -38,6 +38,16 @@
     "sponsor": {
       "via": "sponsor_serata",
       "collection": "evento"
+    },
+    "valutazione": {
+      "type": "enumeration",
+      "enum": [
+        "UNO",
+        "DUE",
+        "TRE",
+        "QUATTRO",
+        "CINQUE"
+      ]
     }
   }
 }
