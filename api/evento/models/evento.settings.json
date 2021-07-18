@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "eventos",
+  "info": {
+    "name": "evento",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "data": {
+      "type": "datetime"
+    },
+    "titolo": {
+      "type": "string"
+    },
+    "descrizione": {
+      "type": "text"
+    },
+    "foto_sponsor": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "partecipanti": {
+      "via": "eventi",
+      "collection": "contatto",
+      "dominant": true
+    },
+    "sponsor_serata": {
+      "via": "sponsor",
+      "model": "contatto"
+    }
+  }
+}

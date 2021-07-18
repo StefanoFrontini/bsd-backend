@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/contattos",
+      "handler": "contatto.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/contattos/count",
+      "handler": "contatto.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/contattos/:id",
+      "handler": "contatto.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/contattos",
+      "handler": "contatto.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/contattos/:id",
+      "handler": "contatto.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/contattos/:id",
+      "handler": "contatto.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contatto",
+  "info": {
+    "name": "contatto",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "email": {
+      "type": "email",
+      "unique": true
+    },
+    "cognome": {
+      "type": "string"
+    },
+    "nome": {
+      "type": "string"
+    },
+    "cellulare": {
+      "type": "string"
+    },
+    "professione": {
+      "type": "text"
+    },
+    "chi_cerca": {
+      "type": "text"
+    },
+    "eventi": {
+      "via": "partecipanti",
+      "collection": "evento"
+    },
+    "sponsor": {
+      "via": "sponsor_serata",
+      "collection": "evento"
+    }
+  }
+}
