@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/maurizio-121-s",
+      "handler": "maurizio121.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/maurizio-121-s/count",
+      "handler": "maurizio121.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/maurizio-121-s/:id",
+      "handler": "maurizio121.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/maurizio-121-s",
+      "handler": "maurizio121.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/maurizio-121-s/:id",
+      "handler": "maurizio121.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/maurizio-121-s/:id",
+      "handler": "maurizio121.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

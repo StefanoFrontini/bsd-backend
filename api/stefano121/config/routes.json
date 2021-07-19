@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/stefano-121-s",
+      "handler": "stefano121.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/stefano-121-s/count",
+      "handler": "stefano121.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/stefano-121-s/:id",
+      "handler": "stefano121.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/stefano-121-s",
+      "handler": "stefano121.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/stefano-121-s/:id",
+      "handler": "stefano121.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/stefano-121-s/:id",
+      "handler": "stefano121.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

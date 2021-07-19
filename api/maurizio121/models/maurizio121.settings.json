@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "maurizio121s",
+  "info": {
+    "name": "maurizio121"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "data": {
+      "type": "date"
+    },
+    "contatto": {
+      "model": "contatto",
+      "via": "maurizio_121s"
+    },
+    "note": {
+      "type": "text"
+    }
+  }
+}

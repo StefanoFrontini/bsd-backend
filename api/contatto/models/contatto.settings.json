@@ -48,6 +48,20 @@
         "QUATTRO",
         "CINQUE"
       ]
+    },
+    "contatti_dati": {
+      "collection": "contatto"
+    },
+    "contatti_ricevuti": {
+      "collection": "contatto"
+    },
+    "stefano_121s": {
+      "via": "contatto",
+      "collection": "stefano121"
+    },
+    "maurizio_121s": {
+      "via": "contatto",
+      "collection": "maurizio121"
     }
   }
 }

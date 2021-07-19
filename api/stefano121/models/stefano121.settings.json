@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "stefano121s",
+  "info": {
+    "name": "stefano121",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "data": {
+      "type": "date"
+    },
+    "contatto": {
+      "model": "contatto",
+      "via": "stefano_121s"
+    },
+    "note": {
+      "type": "text"
+    }
+  }
+}
