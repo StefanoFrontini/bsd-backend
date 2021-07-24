@@ -21,13 +21,14 @@
     "strapi-plugin-email": "3.6.5",
     "strapi-plugin-graphql": "^3.6.5",
     "strapi-plugin-i18n": "3.6.5",
+    "strapi-plugin-import-export-content": "^0.4.0",
     "strapi-plugin-upload": "3.6.5",
     "strapi-plugin-users-permissions": "3.6.5",
     "strapi-provider-upload-cloudinary": "^3.6.5",
     "strapi-utils": "3.6.5"
   },
   "author": {
-    "name": "A Strapi developer"
+    "name": "Stefano Frontini"
   },
   "strapi": {
     "uuid": "4d970b6c-3136-4fec-926b-34f0a26388bb"
