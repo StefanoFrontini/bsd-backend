@@ -41,6 +41,20 @@
     "sponsor_serata": {
       "via": "sponsor",
       "model": "contatto"
+    },
+    "online_offline": {
+      "type": "enumeration",
+      "enum": [
+        "online",
+        "offline"
+      ]
+    },
+    "passato_futuro": {
+      "type": "enumeration",
+      "enum": [
+        "passato",
+        "futuro"
+      ]
     }
   }
 }
