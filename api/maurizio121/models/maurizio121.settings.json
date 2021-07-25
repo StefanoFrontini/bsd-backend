@@ -15,8 +15,8 @@
       "type": "date"
     },
     "contatto": {
-      "model": "contatto",
-      "via": "maurizio_121s"
+      "via": "maurizio_121s",
+      "model": "contatto"
     },
     "note": {
       "type": "text"

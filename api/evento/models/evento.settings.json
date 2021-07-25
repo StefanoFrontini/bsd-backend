@@ -55,6 +55,12 @@
         "passato",
         "futuro"
       ]
+    },
+    "location": {
+      "type": "string"
+    },
+    "location_indirizzo": {
+      "type": "string"
     }
   }
 }
