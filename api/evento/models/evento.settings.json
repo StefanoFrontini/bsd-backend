@@ -21,18 +21,6 @@
     "descrizione": {
       "type": "text"
     },
-    "foto_sponsor": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": false,
-      "pluginOptions": {}
-    },
     "partecipanti": {
       "via": "eventi",
       "collection": "contatto",

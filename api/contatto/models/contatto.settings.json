@@ -62,6 +62,18 @@
     "maurizio_121s": {
       "via": "contatto",
       "collection": "maurizio121"
+    },
+    "foto": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
     }
   }
 }
