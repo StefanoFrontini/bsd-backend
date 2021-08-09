@@ -11,7 +11,7 @@ module.exports = ({ env }) => ({
     provider: "nodemailer",
     providerOptions: {
       host: env("ZOHO_SMTP"),
-      port: env("SMTP_PORT", 587),
+      port: env("SMTP_PORT", 465),
       auth: {
         user: env("ZOHO_USER"),
         pass: env("ZOHO_PSW"),
