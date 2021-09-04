@@ -747,6 +747,12 @@
                 "foto": {
                   "type": "string"
                 },
+                "testimonianzas": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -835,6 +841,12 @@
                 },
                 "foto": {
                   "type": "string"
+                },
+                "testimonianzas": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 },
                 "published_at": {
                   "type": "string"
@@ -977,6 +989,37 @@
               }
             }
           },
+          "testimonianzas": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "data": {
+                  "type": "string"
+                },
+                "video": {
+                  "type": "string"
+                },
+                "contatto": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -1044,6 +1087,12 @@
             }
           },
           "maurizio_121s": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "testimonianzas": {
             "type": "array",
             "items": {
               "type": "string"

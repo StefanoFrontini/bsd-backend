@@ -74,6 +74,10 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
+    },
+    "testimonianzas": {
+      "via": "contatto",
+      "collection": "testimonianza"
     }
   }
 }

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/testimonianzas",
+      "handler": "testimonianza.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/testimonianzas/count",
+      "handler": "testimonianza.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/testimonianzas/:id",
+      "handler": "testimonianza.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/testimonianzas",
+      "handler": "testimonianza.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/testimonianzas/:id",
+      "handler": "testimonianza.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/testimonianzas/:id",
+      "handler": "testimonianza.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

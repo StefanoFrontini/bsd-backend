@@ -614,6 +614,12 @@
               "foto": {
                 "type": "string"
               },
+              "testimonianzas": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
               "published_at": {
                 "type": "string"
               },

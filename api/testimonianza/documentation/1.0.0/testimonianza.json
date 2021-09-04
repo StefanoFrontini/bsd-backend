@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/eventos": {
+    "/testimonianzas": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -12,7 +12,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Evento"
+                    "$ref": "#/components/schemas/Testimonianza"
                   }
                 }
               }
@@ -51,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "Evento"
+          "Testimonianza"
         ],
         "parameters": [
           {
@@ -201,7 +201,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Evento"
+                  "$ref": "#/components/schemas/Testimonianza"
                 }
               }
             }
@@ -239,7 +239,7 @@
         },
         "summary": "",
         "tags": [
-          "Evento"
+          "Testimonianza"
         ],
         "requestBody": {
           "description": "",
@@ -247,14 +247,14 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewEvento"
+                "$ref": "#/components/schemas/NewTestimonianza"
               }
             }
           }
         }
       }
     },
-    "/eventos/count": {
+    "/testimonianzas/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -306,12 +306,12 @@
         },
         "summary": "",
         "tags": [
-          "Evento"
+          "Testimonianza"
         ],
         "parameters": []
       }
     },
-    "/eventos/{id}": {
+    "/testimonianzas/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -321,7 +321,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Evento"
+                  "$ref": "#/components/schemas/Testimonianza"
                 }
               }
             }
@@ -359,7 +359,7 @@
         },
         "summary": "",
         "tags": [
-          "Evento"
+          "Testimonianza"
         ],
         "parameters": [
           {
@@ -383,7 +383,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Evento"
+                  "$ref": "#/components/schemas/Testimonianza"
                 }
               }
             }
@@ -421,7 +421,7 @@
         },
         "summary": "",
         "tags": [
-          "Evento"
+          "Testimonianza"
         ],
         "requestBody": {
           "description": "",
@@ -429,7 +429,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewEvento"
+                "$ref": "#/components/schemas/NewTestimonianza"
               }
             }
           }
@@ -495,7 +495,7 @@
         },
         "summary": "",
         "tags": [
-          "Evento"
+          "Testimonianza"
         ],
         "parameters": [
           {
@@ -514,7 +514,7 @@
   },
   "components": {
     "schemas": {
-      "Evento": {
+      "Testimonianza": {
         "required": [
           "id"
         ],
@@ -524,110 +524,76 @@
           },
           "data": {
             "type": "string",
-            "format": "date-time"
+            "format": "date"
           },
-          "titolo": {
-            "type": "string"
-          },
-          "descrizione": {
-            "type": "string"
-          },
-          "partecipanti": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "email": {
-                  "type": "string"
-                },
-                "cognome": {
-                  "type": "string"
-                },
-                "nome": {
-                  "type": "string"
-                },
-                "cellulare": {
-                  "type": "string"
-                },
-                "professione": {
-                  "type": "string"
-                },
-                "chi_cerca": {
-                  "type": "string"
-                },
-                "eventi": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "sponsor": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "valutazione": {
-                  "type": "string",
-                  "enum": [
-                    "UNO",
-                    "DUE",
-                    "TRE",
-                    "QUATTRO",
-                    "CINQUE"
-                  ]
-                },
-                "contatti_dati": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "contatti_ricevuti": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "stefano_121s": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "maurizio_121s": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "foto": {
-                  "type": "string"
-                },
-                "testimonianzas": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
+          "video": {
+            "required": [
+              "id",
+              "name",
+              "hash",
+              "mime",
+              "size",
+              "url",
+              "provider"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "alternativeText": {
+                "type": "string"
+              },
+              "caption": {
+                "type": "string"
+              },
+              "width": {
+                "type": "integer"
+              },
+              "height": {
+                "type": "integer"
+              },
+              "formats": {
+                "type": "object"
+              },
+              "hash": {
+                "type": "string"
+              },
+              "ext": {
+                "type": "string"
+              },
+              "mime": {
+                "type": "string"
+              },
+              "size": {
+                "type": "number"
+              },
+              "url": {
+                "type": "string"
+              },
+              "previewUrl": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "provider_metadata": {
+                "type": "object"
+              },
+              "related": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
               }
             }
           },
-          "sponsor_serata": {
+          "contatto": {
             "required": [
               "id"
             ],
@@ -719,71 +685,19 @@
               }
             }
           },
-          "online_offline": {
-            "type": "string",
-            "enum": [
-              "online",
-              "offline"
-            ]
-          },
-          "passato_futuro": {
-            "type": "string",
-            "enum": [
-              "passato",
-              "futuro"
-            ]
-          },
-          "location": {
-            "type": "string"
-          },
-          "location_indirizzo": {
-            "type": "string"
-          },
           "published_at": {
             "type": "string",
             "format": "date-time"
           }
         }
       },
-      "NewEvento": {
+      "NewTestimonianza": {
         "properties": {
           "data": {
             "type": "string",
-            "format": "date-time"
+            "format": "date"
           },
-          "titolo": {
-            "type": "string"
-          },
-          "descrizione": {
-            "type": "string"
-          },
-          "partecipanti": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
-          "sponsor_serata": {
-            "type": "string"
-          },
-          "online_offline": {
-            "type": "string",
-            "enum": [
-              "online",
-              "offline"
-            ]
-          },
-          "passato_futuro": {
-            "type": "string",
-            "enum": [
-              "passato",
-              "futuro"
-            ]
-          },
-          "location": {
-            "type": "string"
-          },
-          "location_indirizzo": {
+          "contatto": {
             "type": "string"
           },
           "published_at": {
@@ -802,7 +716,7 @@
   },
   "tags": [
     {
-      "name": "Evento"
+      "name": "Testimonianza"
     }
   ]
 }
