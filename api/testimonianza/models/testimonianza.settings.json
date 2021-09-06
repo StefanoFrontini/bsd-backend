@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "testimonianzas",
   "info": {
-    "name": "testimonianza"
+    "name": "testimonianza",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -29,6 +30,9 @@
     "contatto": {
       "model": "contatto",
       "via": "testimonianzas"
+    },
+    "slug": {
+      "type": "uid"
     }
   }
 }

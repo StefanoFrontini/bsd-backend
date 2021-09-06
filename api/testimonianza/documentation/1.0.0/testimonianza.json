@@ -685,6 +685,9 @@
               }
             }
           },
+          "slug": {
+            "type": "uid"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -699,6 +702,9 @@
           },
           "contatto": {
             "type": "string"
+          },
+          "slug": {
+            "type": "uid"
           },
           "published_at": {
             "type": "string",
