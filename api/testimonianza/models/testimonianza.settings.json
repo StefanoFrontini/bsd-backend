@@ -28,8 +28,8 @@
       "pluginOptions": {}
     },
     "contatto": {
-      "model": "contatto",
-      "via": "testimonianzas"
+      "via": "testimonianzas",
+      "model": "contatto"
     },
     "slug": {
       "type": "uid"

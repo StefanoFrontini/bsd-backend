@@ -674,6 +674,15 @@
                   "type": "string"
                 }
               },
+              "slug": {
+                "type": "uid"
+              },
+              "sito_web": {
+                "type": "string"
+              },
+              "linkedin": {
+                "type": "string"
+              },
               "published_at": {
                 "type": "string"
               },

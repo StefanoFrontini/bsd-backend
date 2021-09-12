@@ -615,6 +615,15 @@
                     "type": "string"
                   }
                 },
+                "slug": {
+                  "type": "uid"
+                },
+                "sito_web": {
+                  "type": "string"
+                },
+                "linkedin": {
+                  "type": "string"
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -708,6 +717,15 @@
                   "type": "string"
                 }
               },
+              "slug": {
+                "type": "uid"
+              },
+              "sito_web": {
+                "type": "string"
+              },
+              "linkedin": {
+                "type": "string"
+              },
               "published_at": {
                 "type": "string"
               },
@@ -737,6 +755,12 @@
             "type": "string"
           },
           "location_indirizzo": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "uid"
+          },
+          "link_video": {
             "type": "string"
           },
           "published_at": {
@@ -784,6 +808,12 @@
             "type": "string"
           },
           "location_indirizzo": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "uid"
+          },
+          "link_video": {
             "type": "string"
           },
           "published_at": {

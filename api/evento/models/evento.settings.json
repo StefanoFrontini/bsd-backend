@@ -49,6 +49,12 @@
     },
     "location_indirizzo": {
       "type": "string"
+    },
+    "slug": {
+      "type": "uid"
+    },
+    "link_video": {
+      "type": "string"
     }
   }
 }

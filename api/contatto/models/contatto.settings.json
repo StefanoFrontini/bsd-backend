@@ -78,6 +78,16 @@
     "testimonianzas": {
       "via": "contatto",
       "collection": "testimonianza"
+    },
+    "slug": {
+      "type": "uid",
+      "required": false
+    },
+    "sito_web": {
+      "type": "string"
+    },
+    "linkedin": {
+      "type": "string"
     }
   }
 }

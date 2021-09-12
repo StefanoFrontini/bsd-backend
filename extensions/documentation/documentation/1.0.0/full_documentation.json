@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "09/06/2021 1:28:29 PM"
+    "x-generation-date": "09/12/2021 1:05:53 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -4929,6 +4929,12 @@
                 "location_indirizzo": {
                   "type": "string"
                 },
+                "slug": {
+                  "type": "uid"
+                },
+                "link_video": {
+                  "type": "string"
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -4987,6 +4993,12 @@
                   "type": "string"
                 },
                 "location_indirizzo": {
+                  "type": "string"
+                },
+                "slug": {
+                  "type": "uid"
+                },
+                "link_video": {
                   "type": "string"
                 },
                 "published_at": {
@@ -5094,6 +5106,15 @@
                     "type": "string"
                   }
                 },
+                "slug": {
+                  "type": "uid"
+                },
+                "sito_web": {
+                  "type": "string"
+                },
+                "linkedin": {
+                  "type": "string"
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -5188,6 +5209,15 @@
                   "items": {
                     "type": "string"
                   }
+                },
+                "slug": {
+                  "type": "uid"
+                },
+                "sito_web": {
+                  "type": "string"
+                },
+                "linkedin": {
+                  "type": "string"
                 },
                 "published_at": {
                   "type": "string"
@@ -5364,6 +5394,15 @@
               }
             }
           },
+          "slug": {
+            "type": "uid"
+          },
+          "sito_web": {
+            "type": "string"
+          },
+          "linkedin": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -5441,6 +5480,15 @@
             "items": {
               "type": "string"
             }
+          },
+          "slug": {
+            "type": "uid"
+          },
+          "sito_web": {
+            "type": "string"
+          },
+          "linkedin": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -5555,6 +5603,15 @@
                     "type": "string"
                   }
                 },
+                "slug": {
+                  "type": "uid"
+                },
+                "sito_web": {
+                  "type": "string"
+                },
+                "linkedin": {
+                  "type": "string"
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -5648,6 +5705,15 @@
                   "type": "string"
                 }
               },
+              "slug": {
+                "type": "uid"
+              },
+              "sito_web": {
+                "type": "string"
+              },
+              "linkedin": {
+                "type": "string"
+              },
               "published_at": {
                 "type": "string"
               },
@@ -5677,6 +5743,12 @@
             "type": "string"
           },
           "location_indirizzo": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "uid"
+          },
+          "link_video": {
             "type": "string"
           },
           "published_at": {
@@ -5724,6 +5796,12 @@
             "type": "string"
           },
           "location_indirizzo": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "uid"
+          },
+          "link_video": {
             "type": "string"
           },
           "published_at": {
@@ -5830,6 +5908,15 @@
                 "items": {
                   "type": "string"
                 }
+              },
+              "slug": {
+                "type": "uid"
+              },
+              "sito_web": {
+                "type": "string"
+              },
+              "linkedin": {
+                "type": "string"
               },
               "published_at": {
                 "type": "string"
@@ -5967,6 +6054,15 @@
                 "items": {
                   "type": "string"
                 }
+              },
+              "slug": {
+                "type": "uid"
+              },
+              "sito_web": {
+                "type": "string"
+              },
+              "linkedin": {
+                "type": "string"
               },
               "published_at": {
                 "type": "string"
@@ -6171,6 +6267,15 @@
                 "items": {
                   "type": "string"
                 }
+              },
+              "slug": {
+                "type": "uid"
+              },
+              "sito_web": {
+                "type": "string"
+              },
+              "linkedin": {
+                "type": "string"
               },
               "published_at": {
                 "type": "string"
