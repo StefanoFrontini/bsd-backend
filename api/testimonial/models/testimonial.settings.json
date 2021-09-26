@@ -1,0 +1,57 @@
+{
+  "kind": "collectionType",
+  "collectionName": "testimonials",
+  "info": {
+    "name": "testimonial",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "data": {
+      "type": "date"
+    },
+    "da": {
+      "via": "testimonianza_data",
+      "collection": "contatto",
+      "dominant": true
+    },
+    "a": {
+      "via": "testimonianza_ricevuta",
+      "collection": "contatto",
+      "dominant": true
+    },
+    "stelline": {
+      "type": "enumeration",
+      "enum": [
+        "uno",
+        "due",
+        "tre",
+        "quattro",
+        "cinque"
+      ]
+    },
+    "testo": {
+      "type": "text"
+    },
+    "video": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "generosita": {
+      "type": "integer"
+    }
+  }
+}

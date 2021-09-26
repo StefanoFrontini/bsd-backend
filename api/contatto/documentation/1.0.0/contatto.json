@@ -672,16 +672,6 @@
               }
             }
           },
-          "valutazione": {
-            "type": "string",
-            "enum": [
-              "UNO",
-              "DUE",
-              "TRE",
-              "QUATTRO",
-              "CINQUE"
-            ]
-          },
           "contatti_dati": {
             "type": "array",
             "items": {
@@ -721,16 +711,6 @@
                   "items": {
                     "type": "string"
                   }
-                },
-                "valutazione": {
-                  "type": "string",
-                  "enum": [
-                    "UNO",
-                    "DUE",
-                    "TRE",
-                    "QUATTRO",
-                    "CINQUE"
-                  ]
                 },
                 "contatti_dati": {
                   "type": "array",
@@ -773,6 +753,24 @@
                 },
                 "linkedin": {
                   "type": "string"
+                },
+                "testimonianza_data": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "testimonianza_ricevuta": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "ospiti": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 },
                 "published_at": {
                   "type": "string"
@@ -826,16 +824,6 @@
                     "type": "string"
                   }
                 },
-                "valutazione": {
-                  "type": "string",
-                  "enum": [
-                    "UNO",
-                    "DUE",
-                    "TRE",
-                    "QUATTRO",
-                    "CINQUE"
-                  ]
-                },
                 "contatti_dati": {
                   "type": "array",
                   "items": {
@@ -877,6 +865,24 @@
                 },
                 "linkedin": {
                   "type": "string"
+                },
+                "testimonianza_data": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "testimonianza_ricevuta": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "ospiti": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 },
                 "published_at": {
                   "type": "string"
@@ -1062,6 +1068,230 @@
           "linkedin": {
             "type": "string"
           },
+          "testimonianza_data": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "data": {
+                  "type": "string"
+                },
+                "da": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "a": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "stelline": {
+                  "type": "string",
+                  "enum": [
+                    "uno",
+                    "due",
+                    "tre",
+                    "quattro",
+                    "cinque"
+                  ]
+                },
+                "testo": {
+                  "type": "string"
+                },
+                "video": {
+                  "type": "string"
+                },
+                "generosita": {
+                  "type": "integer"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "testimonianza_ricevuta": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "data": {
+                  "type": "string"
+                },
+                "da": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "a": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "stelline": {
+                  "type": "string",
+                  "enum": [
+                    "uno",
+                    "due",
+                    "tre",
+                    "quattro",
+                    "cinque"
+                  ]
+                },
+                "testo": {
+                  "type": "string"
+                },
+                "video": {
+                  "type": "string"
+                },
+                "generosita": {
+                  "type": "integer"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "ospiti": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "email": {
+                  "type": "string"
+                },
+                "cognome": {
+                  "type": "string"
+                },
+                "nome": {
+                  "type": "string"
+                },
+                "cellulare": {
+                  "type": "string"
+                },
+                "professione": {
+                  "type": "string"
+                },
+                "chi_cerca": {
+                  "type": "string"
+                },
+                "eventi": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "sponsor": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "contatti_dati": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "contatti_ricevuti": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "stefano_121s": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "maurizio_121s": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "foto": {
+                  "type": "string"
+                },
+                "testimonianzas": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "slug": {
+                  "type": "uid"
+                },
+                "sito_web": {
+                  "type": "string"
+                },
+                "linkedin": {
+                  "type": "string"
+                },
+                "testimonianza_data": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "testimonianza_ricevuta": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "ospiti": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -1099,16 +1329,6 @@
             "items": {
               "type": "string"
             }
-          },
-          "valutazione": {
-            "type": "string",
-            "enum": [
-              "UNO",
-              "DUE",
-              "TRE",
-              "QUATTRO",
-              "CINQUE"
-            ]
           },
           "contatti_dati": {
             "type": "array",
@@ -1148,6 +1368,24 @@
           },
           "linkedin": {
             "type": "string"
+          },
+          "testimonianza_data": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "testimonianza_ricevuta": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "ospiti": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "published_at": {
             "type": "string",

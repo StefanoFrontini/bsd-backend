@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/stefano-121-s": {
+    "/testimonials": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -10,10 +10,9 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Testimonial"
                   }
                 }
               }
@@ -52,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "Stefano121"
+          "Testimonial"
         ],
         "parameters": [
           {
@@ -202,11 +201,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
+                  "$ref": "#/components/schemas/Testimonial"
                 }
               }
             }
@@ -244,7 +239,7 @@
         },
         "summary": "",
         "tags": [
-          "Stefano121"
+          "Testimonial"
         ],
         "requestBody": {
           "description": "",
@@ -252,14 +247,14 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewStefano121"
+                "$ref": "#/components/schemas/NewTestimonial"
               }
             }
           }
         }
       }
     },
-    "/stefano-121-s/count": {
+    "/testimonials/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -270,8 +265,8 @@
               "application/json": {
                 "schema": {
                   "properties": {
-                    "foo": {
-                      "type": "string"
+                    "count": {
+                      "type": "integer"
                     }
                   }
                 }
@@ -311,12 +306,12 @@
         },
         "summary": "",
         "tags": [
-          "Stefano121"
+          "Testimonial"
         ],
         "parameters": []
       }
     },
-    "/stefano-121-s/{id}": {
+    "/testimonials/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -326,11 +321,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
+                  "$ref": "#/components/schemas/Testimonial"
                 }
               }
             }
@@ -368,7 +359,7 @@
         },
         "summary": "",
         "tags": [
-          "Stefano121"
+          "Testimonial"
         ],
         "parameters": [
           {
@@ -392,11 +383,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
+                  "$ref": "#/components/schemas/Testimonial"
                 }
               }
             }
@@ -434,7 +421,7 @@
         },
         "summary": "",
         "tags": [
-          "Stefano121"
+          "Testimonial"
         ],
         "requestBody": {
           "description": "",
@@ -442,7 +429,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewStefano121"
+                "$ref": "#/components/schemas/NewTestimonial"
               }
             }
           }
@@ -508,7 +495,7 @@
         },
         "summary": "",
         "tags": [
-          "Stefano121"
+          "Testimonial"
         ],
         "parameters": [
           {
@@ -527,7 +514,7 @@
   },
   "components": {
     "schemas": {
-      "Stefano121": {
+      "Testimonial": {
         "required": [
           "id"
         ],
@@ -539,105 +526,300 @@
             "type": "string",
             "format": "date"
           },
-          "contatto": {
+          "da": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "email": {
+                  "type": "string"
+                },
+                "cognome": {
+                  "type": "string"
+                },
+                "nome": {
+                  "type": "string"
+                },
+                "cellulare": {
+                  "type": "string"
+                },
+                "professione": {
+                  "type": "string"
+                },
+                "chi_cerca": {
+                  "type": "string"
+                },
+                "eventi": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "sponsor": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "contatti_dati": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "contatti_ricevuti": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "stefano_121s": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "maurizio_121s": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "foto": {
+                  "type": "string"
+                },
+                "testimonianzas": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "slug": {
+                  "type": "uid"
+                },
+                "sito_web": {
+                  "type": "string"
+                },
+                "linkedin": {
+                  "type": "string"
+                },
+                "testimonianza_data": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "testimonianza_ricevuta": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "ospiti": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "a": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "email": {
+                  "type": "string"
+                },
+                "cognome": {
+                  "type": "string"
+                },
+                "nome": {
+                  "type": "string"
+                },
+                "cellulare": {
+                  "type": "string"
+                },
+                "professione": {
+                  "type": "string"
+                },
+                "chi_cerca": {
+                  "type": "string"
+                },
+                "eventi": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "sponsor": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "contatti_dati": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "contatti_ricevuti": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "stefano_121s": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "maurizio_121s": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "foto": {
+                  "type": "string"
+                },
+                "testimonianzas": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "slug": {
+                  "type": "uid"
+                },
+                "sito_web": {
+                  "type": "string"
+                },
+                "linkedin": {
+                  "type": "string"
+                },
+                "testimonianza_data": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "testimonianza_ricevuta": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "ospiti": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "stelline": {
+            "type": "string",
+            "enum": [
+              "uno",
+              "due",
+              "tre",
+              "quattro",
+              "cinque"
+            ]
+          },
+          "testo": {
+            "type": "string"
+          },
+          "video": {
             "required": [
-              "id"
+              "id",
+              "name",
+              "hash",
+              "mime",
+              "size",
+              "url",
+              "provider"
             ],
             "properties": {
               "id": {
                 "type": "string"
               },
-              "email": {
+              "name": {
                 "type": "string"
               },
-              "cognome": {
+              "alternativeText": {
                 "type": "string"
               },
-              "nome": {
+              "caption": {
                 "type": "string"
               },
-              "cellulare": {
+              "width": {
+                "type": "integer"
+              },
+              "height": {
+                "type": "integer"
+              },
+              "formats": {
+                "type": "object"
+              },
+              "hash": {
                 "type": "string"
               },
-              "professione": {
+              "ext": {
                 "type": "string"
               },
-              "chi_cerca": {
+              "mime": {
                 "type": "string"
               },
-              "eventi": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
+              "size": {
+                "type": "number"
               },
-              "sponsor": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "contatti_dati": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "contatti_ricevuti": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "stefano_121s": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "maurizio_121s": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "foto": {
+              "url": {
                 "type": "string"
               },
-              "testimonianzas": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "slug": {
-                "type": "uid"
-              },
-              "sito_web": {
+              "previewUrl": {
                 "type": "string"
               },
-              "linkedin": {
+              "provider": {
                 "type": "string"
               },
-              "testimonianza_data": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
+              "provider_metadata": {
+                "type": "object"
               },
-              "testimonianza_ricevuta": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "ospiti": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "published_at": {
+              "related": {
                 "type": "string"
               },
               "created_by": {
@@ -648,8 +830,8 @@
               }
             }
           },
-          "note": {
-            "type": "string"
+          "generosita": {
+            "type": "integer"
           },
           "published_at": {
             "type": "string",
@@ -657,17 +839,39 @@
           }
         }
       },
-      "NewStefano121": {
+      "NewTestimonial": {
         "properties": {
           "data": {
             "type": "string",
             "format": "date"
           },
-          "contatto": {
+          "da": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "a": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "stelline": {
+            "type": "string",
+            "enum": [
+              "uno",
+              "due",
+              "tre",
+              "quattro",
+              "cinque"
+            ]
+          },
+          "testo": {
             "type": "string"
           },
-          "note": {
-            "type": "string"
+          "generosita": {
+            "type": "integer"
           },
           "published_at": {
             "type": "string",
@@ -685,7 +889,7 @@
   },
   "tags": [
     {
-      "name": "Stefano121"
+      "name": "Testimonial"
     }
   ]
 }

@@ -39,16 +39,6 @@
       "via": "sponsor_serata",
       "collection": "evento"
     },
-    "valutazione": {
-      "type": "enumeration",
-      "enum": [
-        "UNO",
-        "DUE",
-        "TRE",
-        "QUATTRO",
-        "CINQUE"
-      ]
-    },
     "contatti_dati": {
       "collection": "contatto"
     },
@@ -88,6 +78,17 @@
     },
     "linkedin": {
       "type": "string"
+    },
+    "testimonianza_data": {
+      "via": "da",
+      "collection": "testimonial"
+    },
+    "testimonianza_ricevuta": {
+      "via": "a",
+      "collection": "testimonial"
+    },
+    "ospiti": {
+      "collection": "contatto"
     }
   }
 }

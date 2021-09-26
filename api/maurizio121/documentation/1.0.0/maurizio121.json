@@ -577,16 +577,6 @@
                   "type": "string"
                 }
               },
-              "valutazione": {
-                "type": "string",
-                "enum": [
-                  "UNO",
-                  "DUE",
-                  "TRE",
-                  "QUATTRO",
-                  "CINQUE"
-                ]
-              },
               "contatti_dati": {
                 "type": "array",
                 "items": {
@@ -628,6 +618,24 @@
               },
               "linkedin": {
                 "type": "string"
+              },
+              "testimonianza_data": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "testimonianza_ricevuta": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "ospiti": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
               },
               "published_at": {
                 "type": "string"
