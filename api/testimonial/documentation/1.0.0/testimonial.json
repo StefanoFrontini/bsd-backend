@@ -760,7 +760,7 @@
               "cinque"
             ]
           },
-          "testo": {
+          "testoGac": {
             "type": "string"
           },
           "video": {
@@ -833,6 +833,9 @@
           "generosita": {
             "type": "integer"
           },
+          "testoReview": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -867,11 +870,14 @@
               "cinque"
             ]
           },
-          "testo": {
+          "testoGac": {
             "type": "string"
           },
           "generosita": {
             "type": "integer"
+          },
+          "testoReview": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",

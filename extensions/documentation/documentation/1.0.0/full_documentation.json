@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "09/26/2021 10:57:00 AM"
+    "x-generation-date": "09/26/2021 10:28:00 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -5955,7 +5955,7 @@
                     "cinque"
                   ]
                 },
-                "testo": {
+                "testoGac": {
                   "type": "string"
                 },
                 "video": {
@@ -5963,6 +5963,9 @@
                 },
                 "generosita": {
                   "type": "integer"
+                },
+                "testoReview": {
+                  "type": "string"
                 },
                 "published_at": {
                   "type": "string"
@@ -6011,7 +6014,7 @@
                     "cinque"
                   ]
                 },
-                "testo": {
+                "testoGac": {
                   "type": "string"
                 },
                 "video": {
@@ -6019,6 +6022,9 @@
                 },
                 "generosita": {
                   "type": "integer"
+                },
+                "testoReview": {
+                  "type": "string"
                 },
                 "published_at": {
                   "type": "string"
@@ -7135,7 +7141,7 @@
               "cinque"
             ]
           },
-          "testo": {
+          "testoGac": {
             "type": "string"
           },
           "video": {
@@ -7208,6 +7214,9 @@
           "generosita": {
             "type": "integer"
           },
+          "testoReview": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -7242,11 +7251,14 @@
               "cinque"
             ]
           },
-          "testo": {
+          "testoGac": {
             "type": "string"
           },
           "generosita": {
             "type": "integer"
+          },
+          "testoReview": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",

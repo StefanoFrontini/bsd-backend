@@ -35,7 +35,7 @@
         "cinque"
       ]
     },
-    "testo": {
+    "testoGac": {
       "type": "text"
     },
     "video": {
@@ -52,6 +52,9 @@
     },
     "generosita": {
       "type": "integer"
+    },
+    "testoReview": {
+      "type": "text"
     }
   }
 }
