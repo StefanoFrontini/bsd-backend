@@ -524,7 +524,7 @@
           },
           "data": {
             "type": "string",
-            "format": "date"
+            "format": "date-time"
           },
           "da": {
             "type": "array",
@@ -846,7 +846,7 @@
         "properties": {
           "data": {
             "type": "string",
-            "format": "date"
+            "format": "date-time"
           },
           "da": {
             "type": "array",

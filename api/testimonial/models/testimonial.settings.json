@@ -13,7 +13,7 @@
   "pluginOptions": {},
   "attributes": {
     "data": {
-      "type": "date"
+      "type": "datetime"
     },
     "da": {
       "via": "testimonianza_data",
