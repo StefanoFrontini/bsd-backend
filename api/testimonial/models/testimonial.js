@@ -13,7 +13,9 @@ module.exports = {
   lifecycles: {
     async afterCreate(data) {
       if (data.generosita) {
-        const message = `Un applauso a ${data.a[0].nome} ${data.a[0].cognome}!
+        const message = `Un applauso alla generosità di ${data.a[0].nome} ${
+          data.a[0].cognome
+        }!
         Ha aiutato ${data.da[0].nome} ${data.da[0].cognome} a fatturare ${
           data.generosita
         }€!
@@ -35,7 +37,9 @@ module.exports = {
         const message = `${data.da[0].nome} ${
           data.da[0].cognome
         } ha fatto una recensione per ${data.a[0].nome} ${data.a[0].cognome}!
-        ${data.stelline} stellina/e!
+        ${data.stelline === "uno" ? "una" : data.stelline} ${
+          data.stelline === "uno" ? "stellina" : "stelline"
+        }!
         ${data.testoReview ? data.testoReview : ""}
         ${data.da[0].nome} ${data.da[0].cognome} ${data.da[0].professione}
 
