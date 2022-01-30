@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "09/30/2021 11:23:38 PM"
+    "x-generation-date": "01/30/2022 10:48:43 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -5624,6 +5624,9 @@
                     "type": "string"
                   }
                 },
+                "sponsorAmico": {
+                  "type": "string"
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -5735,6 +5738,9 @@
                   "items": {
                     "type": "string"
                   }
+                },
+                "sponsorAmico": {
+                  "type": "string"
                 },
                 "published_at": {
                   "type": "string"
@@ -6138,6 +6144,9 @@
                     "type": "string"
                   }
                 },
+                "sponsorAmico": {
+                  "type": "string"
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -6149,6 +6158,9 @@
                 }
               }
             }
+          },
+          "sponsorAmico": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -6244,6 +6256,9 @@
             "items": {
               "type": "string"
             }
+          },
+          "sponsorAmico": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -6375,6 +6390,9 @@
                     "type": "string"
                   }
                 },
+                "sponsorAmico": {
+                  "type": "string"
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -6484,6 +6502,9 @@
                 "items": {
                   "type": "string"
                 }
+              },
+              "sponsorAmico": {
+                "type": "string"
               },
               "published_at": {
                 "type": "string"
@@ -6697,6 +6718,9 @@
                   "type": "string"
                 }
               },
+              "sponsorAmico": {
+                "type": "string"
+              },
               "published_at": {
                 "type": "string"
               },
@@ -6850,6 +6874,9 @@
                 "items": {
                   "type": "string"
                 }
+              },
+              "sponsorAmico": {
+                "type": "string"
               },
               "published_at": {
                 "type": "string"
@@ -7007,6 +7034,9 @@
                     "type": "string"
                   }
                 },
+                "sponsorAmico": {
+                  "type": "string"
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -7118,6 +7148,9 @@
                   "items": {
                     "type": "string"
                   }
+                },
+                "sponsorAmico": {
+                  "type": "string"
                 },
                 "published_at": {
                   "type": "string"
@@ -7448,6 +7481,9 @@
                 "items": {
                   "type": "string"
                 }
+              },
+              "sponsorAmico": {
+                "type": "string"
               },
               "published_at": {
                 "type": "string"

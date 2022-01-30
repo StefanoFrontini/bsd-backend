@@ -89,6 +89,9 @@
     },
     "ospiti": {
       "collection": "contatto"
+    },
+    "sponsorAmico": {
+      "type": "string"
     }
   }
 }

@@ -626,6 +626,9 @@
                     "type": "string"
                   }
                 },
+                "sponsorAmico": {
+                  "type": "string"
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -737,6 +740,9 @@
                   "items": {
                     "type": "string"
                   }
+                },
+                "sponsorAmico": {
+                  "type": "string"
                 },
                 "published_at": {
                   "type": "string"
