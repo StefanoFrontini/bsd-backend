@@ -14,11 +14,12 @@ One Contatto has and belongs to many Events (many-to-many relationship)
 
 ## Setup
 
-- Sign up a [free Heroku Account](https://signup.heroku.com/)
+- Sign up a [Free Heroku Account](https://signup.heroku.com/)
 - Create a new project
 - Install the Heroku Postgres addon
 - Retrieve database credentials
 - Create a [Cloudinary Account](https://cloudinary.com/)
+- Retrive Cloudinary credentials
 
 ```bash
 # Clone the following repository
@@ -52,5 +53,3 @@ $ npm install
 # Run the backend
 $ npm run develop
 ```
-
-## Links
