@@ -107,6 +107,8 @@ coverage
 ############################
 
 .env
+.env-old
+latest.dump
 license.txt
 exports
 *.cache
