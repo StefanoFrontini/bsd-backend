@@ -1,7 +1,7 @@
 
 # Dockerfile
 
-FROM node:16-bullseye-slim
+FROM node:14-bullseye-slim
 
 # Installing libvips-dev for sharp Compatability
 RUN apt-get update && apt-get install libvips-dev -y
@@ -13,7 +13,7 @@ ENV NODE_ENV=${NODE_ENV}
 
 # Copy the configuration files
 WORKDIR /opt/
-COPY ./package.json ./package-lock.json ./
+COPY ./package.json  ./
 ENV PATH /opt/node_modules/.bin:$PATH
 
 # Install dependencies
